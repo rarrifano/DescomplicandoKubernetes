@@ -7,8 +7,14 @@ metadata:
   name: girus
 spec:
   containers:
-  - image: alpine
-    name: girus
+  - image: nginx
+    name: nginx
+    resources: {}
+  - image: busybox
+    name: busybox
+    args:
+    - sleep
+    - "600"
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
