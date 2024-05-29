@@ -14,14 +14,14 @@ spec:
     metadata:
       labels:
         app: nginx-deployment
-      spec:
-        containers:
-        - image: nginx
-          name: nginx
-          resources:
-            limits:
-              cpu: 0.5
-              memory: 256Mi
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources:
+          limits:
+            cpu: 0.5
+            memory: 256Mi
           requests:
             cpu: 0.3
             memory: 64Mi
